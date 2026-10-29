@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow Movie Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .movie-card {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #e31837;
+        }
+
+        button {
+            background-color: #e31837;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Dark mode */
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        body.dark-mode .movie-card {
+            background-color: #292929;
+        }
+
+        body.dark-mode h1 {
+            color: #ff5364;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="movie-card">
+        <h1>BookMyShow</h1>
+
+        <h2>Movie: Jawan</h2>
+
+        <p>Genre: Action | Thriller</p>
+        <p>Language: Hindi</p>
+        <p>Rating: 8.5/10</p>
+
+        <button>Book Tickets</button>
+        <br><br>
+
+        <button onclick="toggleMode()">
+            Switch Light / Dark Mode
+        </button>
+    </div>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+</html>
